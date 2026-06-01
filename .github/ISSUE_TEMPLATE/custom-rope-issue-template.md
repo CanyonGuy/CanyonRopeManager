@@ -1,38 +1,42 @@
----
-name: Custom Rope Issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: bug
-assignees: ''
+name: Bug Report
+description: File a structured bug report for iOS
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Submit a Bug Report
+        Please fill out the details below to report an iOS application crash or malfunction.
+        
+  - type: dropdown
+    id: ios-version
+    attributes:
+      label: iOS Version
+      description: Select the iOS version where the bug occurs.
+      options:
+        - iOS 19
+        - iOS 18
+        - iOS 17
+    validations:
+      required: true
 
----
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "Reproduction Steps"
+      description: "Tell us how to reproduce the bug step-by-step."
+      placeholder: |
+        1. Open the app...
+        2. Click on settings...
+        3. App crashes...
+    validations:
+      required: true
 
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+  - type: textarea
+    id: screenshots-logs
+    attributes:
+      label: "Screenshots or Logs"
+      description: "Drag and drop images, videos, or log files directly into the box below."
+      placeholder: "Attach files here..."
+    validations:
+      required: false
