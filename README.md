@@ -9,5 +9,5 @@ Please read these rules before opening a public ticket:
 2. **Search first:** Look through the open issues list to see if someone else already reported your bug.
 3. **Use the template:** Fill out the automated form completely so we can reproduce your issue.
 
-[👉 Click Here to Open a Support Ticket]   [Open an Issues Report](https://github.com/CanyonGuy/CanyonSAR-App-Support/issues)
+[👉 Click Here to Open a Support Ticket]   [Open an Issues Report](https://github.com/CanyonGuy/CanyonRopeManager/issues)
 
